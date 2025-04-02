@@ -5,7 +5,7 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - /media/icnlab/Data/Thang/web_em_ngoc_kem/backend_server:/backend
+      - /Streamlit_web/backend_server:/backend
     networks:
       - app_network
 
