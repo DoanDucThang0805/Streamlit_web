@@ -1,0 +1,22 @@
+services:
+  backend:
+    image: backend_app:latest
+    container_name: backend_app
+    ports:
+      - "3001:3001"
+    volumes:
+      - /media/icnlab/Data/Thang/web_em_ngoc_kem/backend_server:/backend
+    networks:
+      - app_network
+
+  frontend:
+    image: frontend_app:latest
+    container_name: frontend_app
+    ports:
+      - "3000:3000"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
