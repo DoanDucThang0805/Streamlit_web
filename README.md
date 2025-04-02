@@ -10,7 +10,7 @@
 
 2. Clone dự án và di chuyển vào thư mục:
 ```bash
-git clone <repository-url>
+git clone https://github.com/DoanDucThang0805/Streamlit_web.git
 cd Streamlit_web
 ```
 
